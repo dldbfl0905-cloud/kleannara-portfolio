@@ -258,8 +258,25 @@ tr:last-child td{border-bottom:none;}
           <div class="foot" style="border:none; margin-top:4px; padding-top:0;">평점은 쿠팡이 표시하는 최고/좋음/보통/별로/나쁨 비율을 5~1점 가중평균한 추정값 — 산출 근거는 data/review_positioning.csv 참고</div>
         </div>
 
+        <div class="card">
+          <h3>브랜드별 콘텐츠 키워드 언급 비율 — 네이버 블로그·카페 실측 (브랜드당 200건, 2026-07-27)</h3>
+          <table>
+            <tr><th>속성</th><th>깨끗한나라</th><th>크리넥스</th><th>뽀삐</th></tr>
+            <tr><td>두께/촉감</td><td>55.0%</td><td style="background:var(--accent-soft); font-weight:700;">68.0%</td><td>22.5%</td></tr>
+            <tr><td>가격/가성비</td><td>33.5%</td><td style="background:var(--accent-soft); font-weight:700;">35.0%</td><td>11.5%</td></tr>
+            <tr><td>부드러움</td><td style="background:var(--accent-soft); font-weight:700;">13.5%</td><td>10.5%</td><td>3.5%</td></tr>
+            <tr><td>미세먼지/친환경</td><td>3.0%</td><td>1.0%</td><td style="background:var(--accent-soft); font-weight:700;">5.0%</td></tr>
+            <tr><td>찢어짐/내구성</td><td>1.0%</td><td style="background:var(--accent-soft); font-weight:700;">4.0%</td><td>0.5%</td></tr>
+            <tr><td>향/무향</td><td>1.0%</td><td>1.5%</td><td style="background:var(--accent-soft); font-weight:700;">3.0%</td></tr>
+          </table>
+          <div class="foot" style="border:none; margin-top:4px; padding-top:0;">브랜드명+"화장지" 검색 시 블로그·카페 상위 100건씩(총 200건/브랜드) 제목+요약에서 속성 키워드 언급 여부를 집계한 비율. 원본 텍스트는 data/review_text_raw.csv, 집계는 data/review_text_attributes.csv 참고. 블로그는 협찬 콘텐츠가 섞여있을 수 있어 카페와 함께 봄</div>
+        </div>
+
         <div class="callout">
           <strong>So what (검색) —</strong> 깨끗한나라의 평균 검색지수(65.0)는 크리넥스(30.4)의 2.1배, 뽀삐(6.2)의 10배 이상입니다. 브랜드 검색 수요 자체가 압도적으로 앞서 있습니다.
+        </div>
+        <div class="callout" style="margin-top:0;">
+          <strong>So what (콘텐츠 키워드) —</strong> 크리넥스는 "두께/촉감"(68%)·"찢어짐/내구성"(4%) 언급이 가장 많아 물리적 품질 중심으로 이야기되는 반면, 깨끗한나라는 "부드러움"(13.5%)에서 오히려 앞섭니다 — 쿠팡 리뷰의 "정말 부드러워요" 체감(크리넥스 74% vs 깨끗한나라 65%)과는 다른 결과로, <strong>구매후 실사용 만족도와 온라인 콘텐츠에서의 인식이 다르게 형성</strong>되어 있을 가능성을 보여줍니다. 뽀삐는 "미세먼지/친환경"(5%)에서만 상대적으로 두각 — 좁지만 차별화된 포지셔닝 여지가 있습니다.
         </div>
         <div class="callout" style="margin-top:0;">
           <strong>So what (리뷰·가격) —</strong> 깨끗한나라가 리뷰수(121,140)·평점(4.75) 모두 카테고리 1위이며 가격은 중간대(169원/10m)입니다. 다만 "정말 부드러워요" 체감 비율은 크리넥스(74%)가 깨끗한나라(65%)보다 9%p 높음 — 판매량·검색수요·전체만족도는 앞서지만 "부드러움" 포지셔닝은 보완 여지가 있습니다. 뽀삐는 최저가(121원)인데도 리뷰수·검색량 모두 절대적으로 적어, 가격 경쟁력만으로는 트랙션이 나오지 않음을 보여줍니다.
