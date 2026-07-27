@@ -198,7 +198,7 @@ tr:last-child td{border-bottom:none;}
           <div class="kpi"><div class="label">화장지 검색량 계절 진폭 (예시)</div><div class="val">±38%</div><div class="delta">성수기 대 비수기</div></div>
           <div class="kpi"><div class="label">물티슈 검색량 YoY (예시)</div><div class="val">+12%</div><div class="delta up">전년 동월 대비</div></div>
           <div class="kpi"><div class="label">자사 vs 경쟁 검색량 격차 (예시)</div><div class="val">-24%p</div><div class="delta warn">경쟁사A 대비</div></div>
-          <div class="kpi"><div class="label">리뷰 평점 격차 (예시)</div><div class="val">★4.2 vs 4.6</div><div class="delta warn">경쟁사 대비 낮음</div></div>
+          <div class="kpi"><div class="label">리뷰수 1위 (쿠팡 실측)</div><div class="val">깨끗한나라</div><div class="delta up">121,140건 · 크리넥스의 2.25배</div></div>
         </div>
 
         <div class="card placeholder-card">
@@ -233,34 +233,37 @@ tr:last-child td{border-bottom:none;}
               <text x="300" y="150" class="tick-label" text-anchor="end">단위: 상대 검색량 지수 (예시)</text>
             </svg>
           </div>
-          <div class="card placeholder-card">
-            <h3>리뷰수 × 평점 × 가격 포지셔닝 (예시, 버블차트)</h3>
-            <svg viewBox="0 0 300 160" role="img" aria-label="리뷰수 평점 가격 포지셔닝 예시 버블차트">
+          <div class="card">
+            <h3>리뷰수 × 평점 × 가격(10m당) 포지셔닝 — 쿠팡 실측 (2026-07-27)</h3>
+            <svg viewBox="0 0 300 160" role="img" aria-label="리뷰수 평점 가격 포지셔닝 버블차트 — 실제 쿠팡 데이터">
               <line class="gridline" x1="30" y1="10" x2="30" y2="140"/>
               <line class="gridline" x1="30" y1="140" x2="280" y2="140"/>
-              <circle cx="90" cy="90" r="14" fill="var(--warn)" opacity=".55"/><text x="90" y="115" class="tick-label" text-anchor="middle">자사 (예시)</text>
-              <circle cx="180" cy="55" r="20" fill="var(--slate)" opacity=".5"/><text x="180" y="30" class="tick-label" text-anchor="middle">경쟁사A (예시)</text>
-              <circle cx="220" cy="95" r="11" fill="var(--slate)" opacity=".4"/><text x="220" y="118" class="tick-label" text-anchor="middle">경쟁사B (예시)</text>
-              <text x="270" y="152" class="tick-label" text-anchor="end">가격 →</text>
+              <circle cx="83" cy="110" r="7" fill="var(--slate)" opacity=".6"/><text x="83" y="128" class="tick-label" text-anchor="middle">뽀삐 (121원·★4.57·463건)</text>
+              <circle cx="203" cy="20" r="26" fill="var(--accent)" opacity=".55"/><text x="150" y="55" class="tick-label" text-anchor="middle" fill="var(--accent)" font-weight="700">깨끗한나라 (169원·★4.75·121,140건)</text>
+              <circle cx="225" cy="36" r="19" fill="var(--warn)" opacity=".55"/><text x="255" y="70" class="tick-label" text-anchor="middle" fill="var(--warn)">크리넥스 (178원·★4.74·53,813건)</text>
+              <text x="270" y="152" class="tick-label" text-anchor="end">10m당 가격 →</text>
               <text x="14" y="20" class="tick-label" transform="rotate(-90 14 20)">평점 →</text>
               <text x="270" y="20" class="tick-label" text-anchor="end" fill="var(--sub)">버블 크기 = 리뷰 수</text>
             </svg>
           </div>
         </div>
 
-        <div class="card placeholder-card">
-          <h3>제품별 리뷰·평점·가격 비교 (예시 — 쿠팡/네이버쇼핑 연동 예정)</h3>
+        <div class="card">
+          <h3>제품별 리뷰·평점·가격 비교 — 쿠팡 실측 (2026-07-27)</h3>
           <table>
-            <tr><th>제품</th><th>리뷰수</th><th>평점</th><th>가격</th><th></th></tr>
-            <tr><td>자사 브랜드 (예시)</td><td>1,240</td><td>★4.2</td><td>12,900원</td><td><span class="pill ph">예시</span></td></tr>
-            <tr><td>경쟁사 A (예시)</td><td>3,850</td><td>★4.6</td><td>13,500원</td><td><span class="pill ph">예시</span></td></tr>
-            <tr><td>경쟁사 B (예시)</td><td>2,100</td><td>★4.4</td><td>11,200원</td><td><span class="pill ph">예시</span></td></tr>
-            <tr><td>경쟁사 C (예시)</td><td>980</td><td>★4.1</td><td>14,800원</td><td><span class="pill ph">예시</span></td></tr>
+            <tr><th>브랜드</th><th>리뷰수</th><th>평점</th><th>가격(할인가)</th><th>10m당</th><th></th></tr>
+            <tr><td>깨끗한나라 (자사)</td><td>121,140</td><td>★4.75</td><td>30,480원</td><td>169원</td><td><span class="pill high">1위</span></td></tr>
+            <tr><td>크리넥스</td><td>53,813</td><td>★4.74</td><td>31,980원</td><td>178원</td><td></td></tr>
+            <tr><td>뽀삐</td><td>463</td><td>★4.57</td><td>21,700원</td><td>121원</td><td><span class="pill low">최저가·저리뷰</span></td></tr>
           </table>
+          <div class="foot" style="border:none; margin-top:4px; padding-top:0;">평점은 쿠팡이 표시하는 최고/좋음/보통/별로/나쁨 비율을 5~1점 가중평균한 추정값 — 산출 근거는 data/review_positioning.csv 참고</div>
         </div>
 
         <div class="callout">
-          <strong>데이터 수집 계획 —</strong> ① 네이버 데이터랩 검색트렌드 API: developers.naver.com에서 앱 등록 후 Client ID/Secret 발급 → 카테고리 키워드·경쟁 브랜드명 검색량 수집. ② 쿠팡·네이버쇼핑 공개 제품페이지: 카테고리별 상위 제품의 리뷰수·평점·가격을 직접 수집. 수집 완료 후 이 페이지의 모든 예시 수치를 실제 값으로 교체합니다.
+          <strong>So what —</strong> 깨끗한나라가 리뷰수(121,140)·평점(4.75) 모두 카테고리 1위이며 가격은 중간대(169원/10m)입니다. 다만 "정말 부드러워요" 체감 비율은 크리넥스(74%)가 깨끗한나라(65%)보다 9%p 높음 — 판매량·전체만족도는 앞서지만 "부드러움" 포지셔닝은 보완 여지가 있습니다. 뽀삐는 최저가(121원)인데도 리뷰수가 절대적으로 적어(463건) 가격 경쟁력만으로는 트랙션이 나오지 않음을 보여줍니다.
+        </div>
+        <div class="callout" style="margin-top:0;">
+          <strong>검색 트렌드 데이터 수집 —</strong> 네이버 데이터랩 API는 NCP 계정·Application·구독까지 정상 등록됐으나 서버 측에서 "구독 필요" 오류가 지속되어 (네이버 API 이관 작업 중으로 추정) 확인 중입니다. 위 리뷰·가격 데이터는 쿠팡 공개 제품페이지를 직접 확인해 반영한 실측치입니다.
         </div>
         <div class="foot">데이터 출처(예정): 네이버 데이터랩(datalab.naver.com) 검색어트렌드 API · 쿠팡/네이버쇼핑 공개 제품페이지 — 상세 설계는 docs/project1_demand_positioning.md 참고</div>
       </div>
